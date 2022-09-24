@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 49px;
+  background-color: rgb(12, 23, 56);
+  color: antiquewhite;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 59px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  /* font-weight: bolder; */
+}
+.container {
+  min-height: 65vh;
+  background-color: rgb(12, 23, 56);
+  color: antiquewhite;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 29px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpeg");
+  background-repeat: round;
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: rgb(12, 23, 56);
+  color: rgb(236, 231, 235);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+  margin-right: 12px;
+}
+#myProgressBar {
+  width: 80vw;
+  /* text-align: center; */
+  cursor: pointer;
+}
+.songItemContainer {
+  margin-top: 64px;
+}
+.songItem {
+  height: 50px;
+  display: flex;
+  color: rgb(200, 204, 204);
+  margin: 12px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem img {
+  margin: 23px 0;
+  width: 43px;
+  border-radius: 34px;
+}
+.songName {
+  margin: 0px 23px;
+}
+.timeStamp {
+  margin: 0px 23px;
+}
+.timeStamp i {
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 9vw;
+  font-family: "Varela Round", sans-serif;
+  justify-content: space-between;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+#masterSongName {
+  margin-left: 10px;
+}
